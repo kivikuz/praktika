@@ -29,3 +29,25 @@ int main() {
     free(a);
     return 0;
 }
+
+int InputArray() {
+    int input;
+    while (1) {
+        printf("Введите размер массива: ");
+
+        if (scanf("%d", &input) != 1) {
+            // Очистка буфера ввода при ошибке
+            while (getchar() != '\n');
+            printf("Ошибка: введено не число. Пожалуйста, введите целое число.\n");
+            continue;
+        }
+
+        if (input < 2) {
+            printf("Ошибка: значение должно быть не меньше 2.\n");
+        }
+        else {
+            break;
+        }
+    }
+    return input;
+}
