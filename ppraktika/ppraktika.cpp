@@ -67,3 +67,23 @@ void selectionSort(int a[], int size) {
         }
     }
 }
+
+void Generator(int a[], int size1) {
+    FILE* file = fopen("original.txt", "w");
+    printf("Сгенерированный массив в файле original.txt\n");
+    for (int i = 0; i < size1; i++) {
+        a[i] = (rand() % 2000) - 1000;
+        fprintf(file, "%d ", a[i]);
+    }
+    fclose(file);
+}
+
+
+void ResultWrite(int a[], int size1) {
+    FILE* file = fopen("sorted.txt", "w");
+    printf("\nОтсортированный по возрастанию массив в файле sorted.txt\n");
+    for (int i = 0; i < size1; i++) {
+        fprintf(file, "%d ", a[i]);
+    }
+    fclose(file);
+}
