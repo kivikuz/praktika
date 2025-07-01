@@ -1,0 +1,3 @@
+﻿  ppraktika.cpp
+C:\Users\Doom\OneDrive\Рабочий стол\практика\praktika\ppraktika\ppraktika.cpp(15,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ppraktika.vcxproj -> C:\Users\Doom\OneDrive\Рабочий стол\практика\praktika\ppraktika\x64\Debug\ppraktika.exe
